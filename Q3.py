@@ -1,5 +1,5 @@
 # Interactive Relationship Explorer — Marimo notebook
-# Author contact: 24ds1000034@ds.study.iitm.ac.in
+# Author contact: 23f3000916@ds.study.iitm.ac.in
 # This notebook demonstrates reactive analysis of a bivariate relationship.
 # Open in edit mode: `uvx marimo edit interactive_analysis_marimo.py`
 # Run as an app:     `uvx marimo run interactive_analysis_marimo.py`

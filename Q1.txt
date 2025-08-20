@@ -24,12 +24,12 @@
         <h2>IITM MLP – RevealJS Demo</h2>
         <h4>Deck features: Markdown, fragments, code, math, notes</h4>
         <p class="fragment">Presenter: Anindya (example)</p>
-        <p class="fragment">Email: <strong>24ds3000008@ds.study.iitm.ac.in</strong></p>
+        <p class="fragment">Email: <strong>23f3000916@ds.study.iitm.ac.in</strong></p>
         <aside class="notes">
           Greet the audience. Mention that this deck demonstrates all the requested capabilities.
           Point out that the email is visible on the first slide per requirements.
         </aside>
-        <div class="footer">Email: 24ds3000008@ds.study.iitm.ac.in</div>
+        <div class="footer">Email: 23f3000916@ds.study.iitm.ac.in</div>
       </section>
 
       <!-- 2) A slide written entirely in Markdown -->
@@ -43,7 +43,7 @@
 
 > Pro tip: Use Markdown for fast iteration!
 
-**Contact:** 24ds3000008@ds.study.iitm.ac.in
+**Contact:** 23f3000916@ds.study.iitm.ac.in
 
 Notes:
 - These speaker notes can be added in HTML using `<aside class="notes">`, but here we showcase Markdown content.
@@ -121,7 +121,7 @@ console.log(futureValue(1000, 0.08, 5));
           <li class="fragment">Enable GitHub Pages from the repo settings.</li>
           <li class="fragment">Open your GitHub Pages URL and present!</li>
         </ol>
-        <p><strong>Contact: 24ds3000008@ds.study.iitm.ac.in</strong></p>
+        <p><strong>Contact: 23f3000916@ds.study.iitm.ac.in</strong></p>
         <aside class="notes">Wrap up and share the URL with the audience.</aside>
       </section>
 

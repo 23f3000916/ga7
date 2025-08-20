@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Q3 2025 Earnings Report</title>
+
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.6.1/reset.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.6.1/reveal.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.6.1/theme/sky.min.css" id="theme">
+
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/zenburn.min.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				
+				<section>
+					<h2>Quarterly Earnings Report</h2>
+					<h3>Q3 2025 - Financial Overview</h3>
+					<p>
+						<small>Presented by: Technical Consulting Team</small><br>
+						<small>Contact: <a href="mailto:23f3000916@ds.study.iitm.ac.in">23f3000916@ds.study.iitm.ac.in</a></small>
+					</p>
+				</section>
+
+				<section>
+					<h2>Agenda</h2>
+					<ul>
+						<li class="fragment">Q3 Performance Highlights</li>
+						<li class="fragment">Segment Analysis</li>
+						<li class="fragment">Financial Projections (Q4)</li>
+						<li class="fragment">Strategic Initiatives</li>
+					</ul>
+					<aside class="notes">
+						Let's walk through the key topics for today's discussion. We'll start with a high-level overview and then dive into specifics.
+					</aside>
+				</section>
+
+				<section data-markdown>
+					<textarea data-template>
+						## Key Takeaways 🚀
+						- Revenue surpassed projections by **7%**.
+						- Net profit margin increased by **2.5%** quarter-over-quarter.
+						- Strong growth observed in the APAC region.
+						---
+						### Next Steps
+						* Double down on emerging markets.
+						* Increase R&D investment for FinTech solutions.
+					</textarea>
+				</section>
+
+				<section>
+					<h2>Financial Modeling: CAGR</h2>
+					<p>We use the Compound Annual Growth Rate (CAGR) to measure long-term growth.</p>
+					<p>The formula is:</p>
+					$$ CAGR = \left( \frac{EV}{BV} \right)^{\frac{1}{n}} - 1 $$
+					<p>Where:</p>
+					<ul>
+						<li>$EV$ = Ending Value</li>
+						<li>$BV$ = Beginning Value</li>
+						<li>$n$ = Number of years</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Risk Analysis Script</h2>
+					<p>Python script for calculating Value at Risk (VaR).</p>
+					<pre><code class="language-python" data-line-numbers="1-5|7-9">
+import numpy as np
+
+# Calculate 95% VaR for a portfolio
+def calculate_var(returns, confidence_level=0.95):
+    sorted_returns = np.sort(returns)
+    index = int((1 - confidence_level) * len(sorted_returns))
+    var = sorted_returns[index]
+    return abs(var)
+
+# Example usage:
+portfolio_returns = np.random.normal(-0.001, 0.01, 1000)
+value_at_risk = calculate_var(portfolio_returns)
+print(f"95% VaR: {value_at_risk:.2%}")
+					</code></pre>
+				</section>
+
+				<section>
+					<h2>Q&A</h2>
+					<h3>Thank You</h3>
+					<aside class="notes">
+						This is the end of the formal presentation. Open the floor for questions from stakeholders. Be prepared to discuss the risk analysis script and the CAGR figures in more detail.
+					</aside>
+				</section>
+
+			</div>
+		</div>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.6.1/reveal.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.6.1/plugin/notes/notes.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.6.1/plugin/markdown/markdown.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.6.1/plugin/highlight/highlight.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.6.1/plugin/math/math.min.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/config/
+			// - https://revealjs.com/plugins/
+			Reveal.initialize({
+				hash: true,
+				// This is where we load the plugins
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.KaTeX ]
+			});
+		</script>
+	</body>
+</html>
